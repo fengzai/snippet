@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <title>Hello World</title>
+</head>
+<body data-name="tmp">
+  <div id="listener">
+      <embed id="e" name="e" path="newlib/Debug" src="newlib/Debug/tmp.nmf" type="application/x-nacl"/>
+  </div>
+  <input type="text" id="i" />
+  <button id="b">Hi</button>
+</body>
+<script>
+
+var e = document.getElementById('e');
+var listener = document.getElementById("listener");
+var b = document.getElementById("b");
+var i = document.getElementById("i");
+
+var l = function(){
+    console.log("module loaded by browser");
+};
+
+var m = function(message){
+    alert(message.data);
+};
+
+var s = function(){
+    e.postMessage(i.value);
+}
+
+listener.addEventListener('load', l, true);
+listener.addEventListener("message", m, true);
+
+b.onclick = s;
+
+console.dir(e);
+
+</script>
+</html>

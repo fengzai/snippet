@@ -1,0 +1,4 @@
+* download native client sdk
+* put this directory `native-client-demo` into `nacl_sdk/pepper_29/examples/`
+* cd native-client-demo && make
+* visit tmp.html use a web server

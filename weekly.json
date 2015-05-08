@@ -1,0 +1,32 @@
+{
+    "KEY" : "",
+    "SECRET" : "",
+    "FOREVER_TOKEN" : "",
+    "BOARD_ID" : "51cbdbaa840e11220d003a0d",
+    "LIST_ID_DONE" : "51cbdbaa840e11220d003a10",
+    "LIST_ID_DOING" : "51cbdbaa840e11220d003a0f",
+    "mail" : {
+        "userName" : "bot@ym.txthinking.com",
+        "password" : "",
+        "smtpServer" : "smtp.ym.163.com"
+    },
+    "To" : [
+        {
+            "name" : "刘",
+            "email" : ""
+        }
+    ],
+    "Cc" : [
+        {
+            "name" : "",
+            "email" : ""
+        }
+    ],
+    "users" : [
+        {
+            "name"     : "TX",
+            "userName" : "txthinking",
+            "email"    : "cloud@txthinking.com"
+        }
+    ]
+}
