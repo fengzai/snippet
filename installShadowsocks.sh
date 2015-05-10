@@ -2,7 +2,7 @@
 # on ubuntu
 
 # first of all
-apt-get install git golang
+apt-get -y install git golang
 echo 'export GOPATH=~/go' >> ~/.bashrc
 echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
 #source ~/.bashrc
