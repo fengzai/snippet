@@ -38,4 +38,4 @@ sysctl -w net.ipv4.tcp_congestion_control=hybla
 
 echo '> $ source ~/.bashrc'
 echo '> $ shadowsocks-server -h'
-echo '> $ nohup shadowsocks-server -k "mima" -p 9000 &'
+echo '> $ killall shadowsocks-server && nohup shadowsocks-server -k "PASSWORD" -p 9000 &'
