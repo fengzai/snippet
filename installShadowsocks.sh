@@ -36,6 +36,9 @@ sysctl -w net.ipv4.tcp_wmem="4096 65536 67108864"
 sysctl -w net.ipv4.tcp_mtu_probing=1
 sysctl -w net.ipv4.tcp_congestion_control=hybla
 
-echo '> $ source ~/.bashrc'
-echo '> $ shadowsocks-server -h'
-echo '> $ killall shadowsocks-server && nohup shadowsocks-server -k "PASSWORD" -p 9000 &'
+echo '$ source ~/.bashrc'
+echo 'For single user:'
+echo '  $ killall shadowsocks-server ; nohup shadowsocks-server -k "PASSWORD" -p 9000 &'
+echo 'For multi user:'
+echo '  $ curl -s https://raw.githubusercontent.com/txthinking/snippet/master/ss_config.json -o config.json'
+echo '  $ killall shadowsocks-server ; nohup shadowsocks-server &'
