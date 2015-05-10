@@ -1,5 +1,6 @@
 #!/bin/bash
 # on ubuntu
+# $ curl -s https://raw.githubusercontent.com/txthinking/snippet/master/installShadowsocks.sh | sh
 
 # first of all
 apt-get -y install git golang
@@ -35,5 +36,6 @@ sysctl -w net.ipv4.tcp_wmem="4096 65536 67108864"
 sysctl -w net.ipv4.tcp_mtu_probing=1
 sysctl -w net.ipv4.tcp_congestion_control=hybla
 
-echo 'Run: source ~/.bashrc'
-echo 'Run: shadowsocks -h'
+echo '> $ source ~/.bashrc'
+echo '> $ shadowsocks-server -h'
+echo '> $ nohup shadowsocks-server -k "mima" -p 9000 &'
