@@ -3,6 +3,7 @@
 # TODO how to replace OSX'curl
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install caskroom/cask/brew-cask
 brew tap homebrew/dupes
 brew install coreutils
 brew install bash
@@ -33,6 +34,6 @@ brew install gzip
 brew install watch
 brew install wdiff --with-gettext
 brew install wget
-brew install proxychains-ng aria2 cmake go node composer pstree make m4 readline base-completion p7zip irssi ettercap php55 php55-mcrypt subversion tmux nmap
+brew install proxychains-ng aria2 cmake go node composer pstree readline bash-completion p7zip irssi ettercap php55 php55-mcrypt subversion tmux nmap
 echo 'PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"' >> ~/.bash_profile
 echo 'MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"' >> ~/.bash_profile
