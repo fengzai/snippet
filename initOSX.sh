@@ -2,6 +2,7 @@
 
 # TODO how to replace OSX'curl
 
+# first of all, install Xcode from App Store
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install caskroom/cask/brew-cask
 brew tap homebrew/dupes
