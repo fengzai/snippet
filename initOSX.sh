@@ -4,7 +4,7 @@
 
 # first of all, install Xcode from App Store
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install caskroom/cask/brew-cask
+
 brew tap homebrew/dupes
 brew install coreutils
 brew install bash
@@ -35,6 +35,13 @@ brew install gzip
 brew install watch
 brew install wdiff --with-gettext
 brew install wget
-brew install proxychains-ng aria2 cmake go node composer pstree readline bash-completion p7zip irssi ettercap php55 php55-mcrypt subversion tmux nmap
-echo 'PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"' >> ~/.bash_profile
-echo 'MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"' >> ~/.bash_profile
+
+brew install cmake bash-completion pcre openssl readline autoconf automake gcc
+brew install go node nmap tmux rsync subversion ettercap pstree mercurial
+brew install aria2 irssi mplayer p7zip proxychains-ng
+brew install php55 php55-mcrypt composer
+brew install boot2docker docker
+
+brew install caskroom/cask/brew-cask
+brew cask install iterm2 dash seil google-chrome shadowsocksx firefox
+
