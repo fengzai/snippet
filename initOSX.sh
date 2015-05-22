@@ -2,7 +2,7 @@
 
 # TODO how to replace OSX'curl
 
-# first of all, install Xcode from App Store
+# first of all, install Xcode from App Store && run xcode-select --install
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew tap homebrew/dupes
@@ -44,4 +44,3 @@ brew install boot2docker docker
 
 brew install caskroom/cask/brew-cask
 brew cask install iterm2 dash seil google-chrome shadowsocksx firefox
-
