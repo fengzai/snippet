@@ -36,12 +36,11 @@ brew install watch
 brew install wdiff --with-gettext
 brew install wget
 
-brew install caskroom/cask/brew-cask
-
 brew install cmake bash-completion pcre openssl readline autoconf automake gcc
 brew install go node nmap tmux rsync subversion ettercap pstree mercurial
 brew install aria2 irssi mplayer p7zip proxychains-ng
 brew install php55 php55-mcrypt composer
-brew install virtualbox boot2docker docker
+brew install boot2docker docker
 
-brew cask install iterm2 dash seil google-chrome shadowsocksx firefox
+brew install caskroom/cask/brew-cask
+brew cask install dash seil google-chrome shadowsocksx virtualbox firefox
